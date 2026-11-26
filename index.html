@@ -1,0 +1,535 @@
+
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FBIP | Web, Flutter App & Software Development Company in Udaipur</title>
+
+<meta name="description" content="FBIP is an IT company in Udaipur, India, offering website development, Flutter app development, custom ERP, CRM, SEO, branding and digital marketing services.">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://samjain1995.github.io/fbipool.com/">
+
+<link rel="icon" href="https://fbipool.com/favicon.ico">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="FBIP - IT & Digital Solutions">
+<meta property="og:description" content="Website, Mobile App, Software Development and Digital Marketing Services.">
+<meta property="og:image" content="https://fbipool.com/assets/images/fbip-services-post.jpg">
+<meta property="og:url" content="https://samjain1995.github.io/fbipool.com/">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#6254e7">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://fbipool.com/#organization",
+  "name": "FBIP",
+  "url": "https://fbipool.com",
+  "logo": "https://fbipool.com/assets/images/fbip-website-logo.webp",
+  "foundingDate": "2018",
+  "email": "hello@fbipool.com",
+  "telephone": "+91-7976955311",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "B-175, Road No 12, Udai Vihar, IT Park, M.I.A. Ext Road",
+    "addressLocality": "Udaipur",
+    "addressRegion": "Rajasthan",
+    "postalCode": "313001",
+    "addressCountry": "IN"
+  },
+  "sameAs": [
+    "https://facebook.com/fbip2018",
+    "https://instagram.com/fbip2018",
+    "https://linkedin.com/company/fbip/",
+    "https://twitter.com/fbipool"
+  ]
+}
+</script>
+
+<style>
+:root {
+    --primary: #6254e7;
+    --orange: #ff7426;
+    --dark: #1e293b;
+    --muted: #64748b;
+    --light: #f7f7ff;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: var(--dark);
+    background: #fff;
+    line-height: 1.7;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.container {
+    width: min(1120px, 92%);
+    margin: auto;
+}
+
+header {
+    background: white;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+    gap: 20px;
+}
+
+.logo {
+    height: 68px;
+    width: auto;
+    object-fit: contain;
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+    font-weight: 600;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: radial-gradient(
+        ellipse at top, #eae6ff, #fff 75%
+    );
+}
+
+.tag {
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 30px;
+    background: #eeeaff;
+    color: var(--primary);
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: clamp(34px, 5vw, 62px);
+    line-height: 1.15;
+    max-width: 950px;
+    margin: 25px auto;
+}
+
+h1 span { color: var(--primary); }
+
+.hero p {
+    max-width: 750px;
+    margin: 20px auto;
+    color: var(--muted);
+    font-size: 18px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 26px;
+    border-radius: 8px;
+    background: var(--primary);
+    color: white;
+    font-weight: bold;
+}
+
+.btn.orange {
+    background: var(--orange);
+}
+
+.btn.outline {
+    background: white;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+section {
+    padding: 65px 0;
+    scroll-margin-top: 95px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    margin: 0 0 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: var(--muted);
+    margin-bottom: 35px;
+}
+
+.services {
+    background: var(--light);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service-card {
+    display: block;
+    background: white;
+    padding: 26px;
+    border: 1px solid #e8e5ff;
+    border-radius: 15px;
+    transition: transform .2s, box-shadow .2s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px #6254e71a;
+}
+
+.service-card h3 {
+    color: var(--dark);
+    font-size: 20px;
+    margin: 12px 0;
+}
+
+.service-card p {
+    color: var(--muted);
+    font-size: 15px;
+}
+
+.service-icon {
+    font-size: 30px;
+}
+
+.learn {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.about {
+    text-align: center;
+    max-width: 850px;
+    margin: auto;
+}
+
+.contact {
+    text-align: center;
+    background: var(--primary);
+    color: white;
+}
+
+.contact a {
+    color: white;
+}
+
+.contact .btn {
+    background: var(--orange);
+}
+
+footer {
+    background: #111827;
+    color: #cbd5e1;
+    padding: 35px 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer a {
+    color: #c4b5fd;
+    margin: 0 6px;
+}
+
+.whatsapp {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: #168c48;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 40px;
+    font-weight: bold;
+    box-shadow: 0 5px 20px #0002;
+}
+
+@media(max-width: 768px) {
+    .grid { grid-template-columns: repeat(2, 1fr); }
+    .hero { padding: 60px 15px; }
+    .nav-links { gap: 12px; font-size: 13px; }
+    .logo { height: 48px; }
+}
+
+@media(max-width: 480px) {
+    .grid { grid-template-columns: 1fr; }
+    .nav-links { gap: 9px; }
+    .section-title { font-size: 28px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <nav class="container">
+        <a href="https://fbipool.com/" aria-label="FBIP Official Website">
+            <img class="logo"
+                 src="https://fbipool.com/assets/images/fbip-website-logo.webp"
+                 alt="FBIP Logo">
+        </a>
+
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+<section class="hero">
+    <div class="container">
+        <span class="tag">ESTABLISHED IN 2018 · UDAIPUR, INDIA</span>
+
+        <h1>
+            Building Your Digital Success with <span>FBIP</span>
+        </h1>
+
+        <p>
+            FBIP is a website designing, mobile application
+            and software development company in Udaipur,
+            Rajasthan, India. We help businesses build
+            scalable digital solutions through technology,
+            design and innovation.
+        </p>
+
+        <div class="buttons">
+            <a class="btn" href="https://fbipool.com/">
+                Visit FBIPool.com
+            </a>
+            <a class="btn outline" href="https://fbip.in/">
+                Visit FBIP.in
+            </a>
+            <a class="btn orange" href="https://wa.me/917976955311">
+                Discuss Your Project
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <div class="container about">
+        <h2 class="section-title">About FBIP</h2>
+
+        <p>
+            <a href="https://fbipool.com/">FBIP</a>
+            provides IT and digital solutions for startups,
+            small businesses and enterprises. Our expertise
+            includes custom websites, Flutter applications,
+            business software, e-commerce development
+            and digital marketing.
+        </p>
+
+        <p>
+            Explore our services, portfolio and business
+            solutions through our websites
+            <a href="https://fbipool.com/">fbipool.com</a>
+            and <a href="https://fbip.in/">fbip.in</a>.
+        </p>
+
+        <a href="https://fbipool.com/about-us">
+            Learn more about FBIP →
+        </a>
+    </div>
+</section>
+
+<section id="services" class="services">
+    <div class="container">
+
+        <h2 class="section-title">Our Services</h2>
+        <p class="subtitle">
+            Technology and digital solutions for your business.
+        </p>
+
+        <div class="grid">
+
+            <a class="service-card" href="https://fbipool.com/web-development/">
+                <span class="service-icon">💻</span>
+                <h3>Web Development</h3>
+                <p>Custom websites, web applications, PHP and Laravel development.</p>
+                <span class="learn">Explore service →</span>
+            </a>
+
+            <a class="service-card" href="https://fbipool.com/flutter/">
+                <span class="service-icon">📱</span>
+                <h3>Flutter App Development</h3>
+                <p>Cross-platform mobile applications for Android and iOS.</p>
+                <span class="learn">Explore service →</span>
+            </a>
+
+            <a class="service-card" href="https://fbipool.com/application-development/">
+                <span class="service-icon">⚙️</span>
+                <h3>Application Development</h3>
+                <p>Custom mobile and business applications tailored to your needs.</p>
+                <span class="learn">Explore service →</span>
+            </a>
+
+            <a class="service-card" href="https://fbipool.com/web-design/">
+                <span class="service-icon">🎨</span>
+                <h3>Website Designing & UI/UX</h3>
+                <p>Responsive websites and intuitive digital experiences.</p>
+                <span class="learn">Explore service →</span>
+            </a>
+
+            <a class="service-card" href="https://fbipool.com/custom-wordpress-development/">
+                <span class="service-icon">🌐</span>
+                <h3>WordPress Development</h3>
+                <p>Custom WordPress websites and content management solutions.</p>
+                <span class="learn">Explore service →</span>
+            </a>
+
+            <a class="service-card" href="https://fbipool.com/digital-marketing/">
+                <span class="service-icon">📢</span>
+                <h3>Digital Marketing</h3>
+                <p>Online marketing strategies to reach your target audience.</p>
+                <span class="learn">Explore service →</span>
+            </a>
+
+            <a class="service-card" href="https://fbipool.com/seo/">
+                <span class="service-icon">📈</span>
+                <h3>SEO Services</h3>
+                <p>Technical SEO, search visibility and organic growth strategies.</p>
+                <span class="learn">Explore service →</span>
+            </a>
+
+            <a class="service-card" href="https://fbipool.com/branding/">
+                <span class="service-icon">✏️</span>
+                <h3>Branding & Graphic Design</h3>
+                <p>Brand identity, logo design and creative business assets.</p>
+                <span class="learn">Explore service →</span>
+            </a>
+
+            <a class="service-card" href="https://fbipool.com/services">
+                <span class="service-icon">🏢</span>
+                <h3>Custom ERP & CRM</h3>
+                <p>Business management, inventory and workflow automation software.</p>
+                <span class="learn">Explore service →</span>
+            </a>
+
+            <a class="service-card" href="https://fbipool.com/services">
+                <span class="service-icon">🛒</span>
+                <h3>E-commerce Development</h3>
+                <p>Shopify, WooCommerce and custom online shopping platforms.</p>
+                <span class="learn">Explore service →</span>
+            </a>
+
+            <a class="service-card" href="https://fbipool.com/services">
+                <span class="service-icon">🤖</span>
+                <h3>AI & Chatbot Automation</h3>
+                <p>AI agents, chatbots and intelligent business workflows.</p>
+                <span class="learn">Explore service →</span>
+            </a>
+
+            <a class="service-card" href="https://fbipool.com/services">
+                <span class="service-icon">💬</span>
+                <h3>WhatsApp Business API</h3>
+                <p>Customer communication and WhatsApp workflow automation.</p>
+                <span class="learn">Explore service →</span>
+            </a>
+
+        </div>
+
+        <div class="buttons">
+            <a class="btn" href="https://fbipool.com/services">
+                View All Services
+            </a>
+            <a class="btn outline" href="https://fbipool.com/portfolio">
+                Explore Our Portfolio
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <div class="container">
+        <h2 class="section-title">Let's Build Something Together</h2>
+
+        <p>Connect with FBIP for your next digital project.</p>
+
+        <p>
+            <strong>Phone:</strong>
+            <a href="tel:+917976955311">+91 7976955311</a>
+            <br>
+            <strong>Email:</strong>
+            <a href="mailto:hello@fbipool.com">hello@fbipool.com</a>
+        </p>
+
+        <p>
+            B-175, Road No 12, Opposite Airtel Office,<br>
+            Udai Vihar, IT Park, M.I.A. Ext Road,<br>
+            Udaipur, Rajasthan 313001, India
+        </p>
+
+        <a class="btn" href="https://fbipool.com/contact-us">
+            Contact FBIP
+        </a>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <strong>FBIP - Website Designing & Development Company</strong>
+
+    <p>
+        Our Websites:
+        <a href="https://fbipool.com/">FBIPool.com</a> |
+        <a href="https://fbip.in/">FBIP.in</a>
+    </p>
+
+    <p>
+        <a href="https://www.facebook.com/fbip2018/">Facebook</a>
+        <a href="https://www.instagram.com/fbip2018/">Instagram</a>
+        <a href="https://www.linkedin.com/company/fbip/">LinkedIn</a>
+        <a href="https://twitter.com/fbipool">X / Twitter</a>
+    </p>
+
+    <p>&copy; 2026 FBIP. All rights reserved.</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/917976955311"
+   aria-label="Chat with FBIP on WhatsApp">
+    WhatsApp
+</a>
+
+</body>
+</html>
